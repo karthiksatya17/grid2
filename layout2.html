@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Layout2</title>
+    <style>
+        body{
+            margin: 1px; padding: 0;}
+.layout{
+                display: grid;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 20% 40% 40%;
+            grid-template-rows: 20% 30% 30% 20%;
+            
+}
+h4{
+    text-align: center;
+    /* align-items: center; */
+    color: black;
+}
+            
+            
+        .a{
+    background-color: lightcoral
+; font-size: 20px;
+align-content: center;
+text-align: center;
+grid-column: 1/4;
+
+
+
+border: 1px solid gray;
+}
+.b{
+    background-color: beige
+; font-size: 20px;
+border: 1px solid gray;
+align-content: center;
+text-align: center;
+grid-row: 2/4;
+
+}
+.c{
+    background-color: skyblue
+; font-size: 20px;
+align-content: center;
+text-align: center;
+border: 1px solid gray;
+grid-column: -3/4;
+}
+.d{
+    background-color: burlywood
+; font-size: 20px;
+align-content: center;
+text-align: center;
+border: 1px solid gray;
+grid-column: -3/4;
+
+}
+.e{
+    background-color: lightblue
+; font-size: 20px;
+align-content: center;
+text-align: center;
+border: 1px solid gray;
+grid-column: 1/4;
+
+}
+    </style>
+</head>
+<body>
+    
+    <div class="layout">
+        <div class="a">THIS IS HEADER
+            <h4>USING GRID ROWS AND COLUMNS</h4>
+        </div>
+        <div class="b">THIS IS ASIDE</div>
+        <div class="c">THIS IS SECTION1</div>
+        <div class="d">THIS IS SECTION2</div>
+        <div class="e">THIS IS FOOTER</div>
+    </div>
+     
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>layout</title>
+    <style>
+body{
+            margin: 1px; padding: 0;
+        }
+.layout{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto auto auto auto auto ;
+            grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header header header header header header "
+    "aside section1 section1 section1 section1 section1"
+    "aside section2 section2 section2 section2 section2"
+    "footer footer footer footer footer footer ";
+ }
+ a{
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    
+
+ }
+.a{
+    background-color: beige
+; font-size: 20px;
+align-content: center;
+text-align: center;
+grid-area: header;
+
+border: 1px solid gray;
+}
+.b{
+    background-color: lightcoral
+; font-size: 20px;
+border: 1px solid gray;
+align-content: center;
+text-align: center;
+grid-area: aside;
+}
+.c{
+    background-color: skyblue
+; font-size: 20px;
+align-content: center;
+text-align: center;
+border: 1px solid gray;
+grid-area: section1;
+}
+.d{
+    background-color: lightblue
+; font-size: 20px;
+align-content: center;
+text-align: center;
+border: 1px solid gray;
+grid-area: section2;
+}
+.e{
+    background-color: burlywood
+; font-size: 20px;
+align-content: center;
+text-align: center;
+border: 1px solid gray;
+grid-area: footer;
+}
+    </style>
+</head>
+<body>
+<div class="layout">
+   <div class="a">THIS IS HEADER
+    <h4>USING GRID AREAS</h4>
+   <h3><a href="./layout2.html">press here for other task</a></h3> 
+   </div>
+   <div class="b">THIS IS ASIDE</div>
+   <div class="c">THIS IS SECTION1</div>
+   <div class="d">THIS IS SECTION2</div>
+   <div class="e">THIS IS FOOTER</div>
+</div>
+</body>
+</html>
